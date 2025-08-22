@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Tber - Engineering Student</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Anas Tber</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="profile-section">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="assets/images/pic3.jpeg" alt="Anas Tber" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    
+                    <div class="availability">
+                        <div class="status-dot"></div>
+                        <span>Available for an internship starting in November 2025</span>
+                    </div>
+
+                    <div class="profile-name">Anas Tber</div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/anas-tber-99b994222/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:anas.tber@etu.ec-lyon.fr" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/anastber" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+
+                    <div class="profile-actions">
+                        <a href="mailto:anas.tber@etu.ec-lyon.fr" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">I'm Anas Tber,</h1>
+                <div class="hero-subtitle">Engineering Student</div>
+                <div class="hero-location">Based in Paris, France.</div>
+                
+                <p class="hero-description">
+                    Passionate engineering student at Centrale Lyon currently on a gap year, with hands-on experience in AI, machine learning, and full-stack development. Developed innovative solutions in computer vision and mobile applications at Gentle Mates. Currently seeking opportunities in Data Science and AI.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-header">
+            <i class="fas fa-briefcase section-icon"></i>
+            <h2 class="section-title">Experience</h2>
+        </div>
+
+        <div class="experience-grid">
+            <div class="experience-item fade-in">
+                <div class="experience-header">
+                    <div class="experience-info">
+                        <h3>Tech and Operations Intern</h3>
+                        <div class="experience-company">Gentle Mates</div>
+                    </div>
+                    <div class="experience-date">2025</div>
+                </div>
+                <p class="experience-description">
+                    Developed automated social media analytics dashboard using Python and computer vision. Built cross-platform mobile app in React Native for real-time esports analytics. Collaborated with teams to optimize sponsor visibility tracking.
+                </p>
+            </div>
+
+            <div class="experience-item fade-in">
+                <div class="experience-header">
+                    <div class="experience-info">
+                        <h3>Founding Team Member & Software Engineer</h3>
+                        <div class="experience-company">FreyIA (Early-Stage Startup)</div>
+                    </div>
+                    <div class="experience-date">2023 - 2025</div>
+                </div>
+                <p class="experience-description">
+                    Co-initiated AI-powered smart waste-sorting solution from academic project to award-winning startup. Developed full-stack web platform with PostgreSQL database and implemented RESTful APIs with WebSockets for IoT integration.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <i class="fas fa-rocket section-icon"></i>
+            <h2 class="section-title">Projects</h2>
+        </div>
+
+        <!-- Internship Projects Subsection -->
+        <div style="margin-bottom: 3rem;">
+            <h3 style="color: var(--accent-green); font-size: 1.2rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-briefcase"></i>
+                Internship Projects
+            </h3>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image" style="position: relative; overflow: hidden; cursor: pointer;" onclick="openImageModal(this)">
+                        <div class="image-carousel" style="width: 100%; height: 100%; position: relative;">
+                            <img src="assets/images/RS1.png" alt="Social Media Analytics" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; position: absolute; top: 0; left: 0; opacity: 1; transition: opacity 0.5s ease;">
+                            <img src="assets/images/RS2.png" alt="Social Media Analytics" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.5s ease;">
+                            <img src="assets/images/RS3.png" alt="Social Media Analytics" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.5s ease;">
+                        </div>
+                        <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">
+                            <i class="fas fa-expand"></i> Click to enlarge
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Social Media Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Developed an automated social media analytics dashboard using Streamlit and Python, implementing computer vision (YOLO) and OCR to detect sponsor mentions and improve partnership ROI tracking.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image" style="position: relative; overflow: hidden; cursor: pointer;" onclick="openImageModal(this)">
+                        <div class="image-carousel" style="width: 100%; height: 100%; position: relative;">
+                            <img src="assets/images/Valo1.jpeg" alt="Valorant Analytics" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; position: absolute; top: 0; left: 0; opacity: 1; transition: opacity 0.5s ease;">
+                            <img src="assets/images/Valo2.jpeg" alt="Valorant Analytics" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.5s ease;">
+                            <img src="assets/images/Valo3.jpeg" alt="Valorant Analytics" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.5s ease;">
+                            <img src="assets/images/Valo4.jpeg" alt="Valorant Analytics" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.5s ease;">
+                        </div>
+                        <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">
+                            <i class="fas fa-expand"></i> Click to enlarge
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Esports Analytics Mobile App</h3>
+                        <p class="project-description">
+                            Built a cross-platform mobile app in React Native integrating Valorant and Fortnite APIs for real-time player analytics, enabling data-driven coaching decisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- School & Personal Projects Subsection -->
+        <div>
+            <h3 style="color: var(--accent-green); font-size: 1.2rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-graduation-cap"></i>
+                School & Personal Projects
+            </h3>
+
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-image">🤖</div>
+                <div class="project-content">
+                    <h3 class="project-title">Transformer Architectures & NLP</h3>
+                    <p class="project-description">
+                        Built sentiment analysis model using CamemBERT achieving 95.91% accuracy on French movie reviews. Researched transformer architectures and attention mechanisms.
+                    </p>
+                    <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                        <a href="assets/documents/Rapport___Transformers (2).pdf" download class="btn btn-secondary" style="flex: 1; font-size: 0.8rem; padding: 0.5rem 1rem;">
+                            <i class="fas fa-file-pdf"></i>
+                            Download Report
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image">🐜</div>
+                <div class="project-content">
+                    <h3 class="project-title">Ant Colony Optimization</h3>
+                    <p class="project-description">
+                        Implemented ant colony optimization algorithm for shortest path problem. Developed interactive visualization with Tkinter displaying real-time pathfinding.
+                    </p>
+                    <a href="https://github.com/anastber/ant-colony-optimization" target="_blank" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.8rem; padding: 0.5rem 1rem;">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image">🎮</div>
+                <div class="project-content">
+                    <h3 class="project-title">2048 Game</h3>
+                    <p class="project-description">
+                        This project is a C++ 2048 clone built with Qt and QML. It faithfully reproduces the original gameplay without ads and adds extra features for a better user experience.
+                    </p>
+                    <a href="https://github.com/anastber/2048-game" target="_blank" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.8rem; padding: 0.5rem 1rem;">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image">🧬</div>
+                <div class="project-content">
+                    <h3 class="project-title">Survival Analysis for Acute Myeloid Leukemia</h3>
+                    <p class="project-description">
+                        Developed LightGBM survival model achieving 0.7745 IPCW-C-index for leukemia patient risk stratification. Applied advanced feature engineering on genomic and clinical datasets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-copyright">
+            <span>©</span>
+            <span>2025 Anas Tber</span>
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/anas-tber-99b994222/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:anas.tber@etu.ec-lyon.fr" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#" title="Portfolio Code">
+                <i class="fas fa-code"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal" onclick="closeImageModal()">&times;</span>
+        <div class="modal-content">
+            <button class="modal-nav-btn" onclick="previousImage()" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <img id="modalImage" class="modal-image" src="" alt="Enlarged image">
+            <button class="modal-nav-btn" onclick="nextImage()" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
