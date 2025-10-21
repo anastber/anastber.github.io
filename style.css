@@ -559,6 +559,25 @@ footer {
         gap: 1rem;
         text-align: center;
     }
+
+    .modal-image {
+        max-width: calc(100vw - 100px);
+        max-height: 80vh;
+    }
+
+    .modal-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .modal-nav-btn:first-of-type {
+        left: 10px;
+    }
+
+    .modal-nav-btn:last-of-type {
+        right: 10px;
+    }
 }
 
 /* Animations */
@@ -591,21 +610,23 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 90%;
-    max-height: 90%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    pointer-events: none;
 }
 
 .modal-image {
-    max-width: 95vw;
-    max-height: 95vh;
+    max-width: calc(100vw - 140px);
+    max-height: 85vh;
     width: auto;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     object-fit: contain;
+    pointer-events: auto;
 }
 
 .modal-nav-btn {
@@ -621,11 +642,24 @@ footer {
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: auto;
+    z-index: 2002;
+}
+
+.modal-nav-btn:first-of-type {
+    left: 20px;
+}
+
+.modal-nav-btn:last-of-type {
+    right: 20px;
 }
 
 .modal-nav-btn:hover {
     background: var(--accent-green);
-    transform: scale(1.1);
+    transform: translateY(-50%) scale(1.1);
 }
 
 .modal-nav-btn:disabled {
