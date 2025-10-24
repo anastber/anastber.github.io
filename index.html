@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Gradient Mesh Background -->
+    <div class="gradient-mesh-background">
+        <div class="mesh-layer mesh-1"></div>
+        <div class="mesh-layer mesh-2"></div>
+        <div class="mesh-layer mesh-3"></div>
+        <div class="mesh-layer mesh-4"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -90,7 +98,7 @@
                     <div class="experience-date">2025</div>
                 </div>
                 <p class="experience-description">
-                    Developed automated social media analytics dashboard using Python and computer vision. Built cross-platform mobile app in React Native for real-time esports analytics. Collaborated with teams to optimize sponsor visibility tracking.
+                    Designed and enhanced innovative internal Tech Tools leveraging web and mobile technologies, computer vision, and AI to optimize internal processes.
                 </p>
             </div>
 
@@ -190,7 +198,14 @@
 
         <div class="projects-grid">
             <div class="project-card fade-in">
-                <div class="project-image">🤖</div>
+                <div class="project-image" style="position: relative; overflow: hidden; cursor: pointer;" onclick="openImageModal(this)">
+                    <div class="image-carousel" style="width: 100%; height: 100%; position: relative;">
+                        <img src="assets/images/transformers.png" alt="Transformer Architectures & NLP" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; position: absolute; top: 0; left: 0; opacity: 1; transition: opacity 0.5s ease;">
+                    </div>
+                    <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">
+                        <i class="fas fa-expand"></i> Click to enlarge
+                    </div>
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">Transformer Architectures & NLP</h3>
                     <p class="project-description">
@@ -206,7 +221,14 @@
             </div>
 
             <div class="project-card fade-in">
-                <div class="project-image">🐜</div>
+                <div class="project-image" style="position: relative; overflow: hidden; cursor: pointer;" onclick="openImageModal(this)">
+                    <div class="image-carousel" style="width: 100%; height: 100%; position: relative;">
+                        <img src="assets/images/ant-colony.png" alt="Ant Colony Optimization" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; position: absolute; top: 0; left: 0; opacity: 1; transition: opacity 0.5s ease;">
+                    </div>
+                    <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">
+                        <i class="fas fa-expand"></i> Click to enlarge
+                    </div>
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">Ant Colony Optimization</h3>
                     <p class="project-description">
@@ -220,7 +242,15 @@
             </div>
 
             <div class="project-card fade-in">
-                <div class="project-image">🎮</div>
+                <div class="project-image" style="position: relative; overflow: hidden; cursor: pointer;" onclick="openImageModal(this)">
+                    <div class="image-carousel" style="width: 100%; height: 100%; position: relative;">
+                        <img src="assets/images/2048.png" alt="2048 Game" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; position: absolute; top: 0; left: 0; opacity: 1; transition: opacity 0.5s ease;">
+                        <img src="assets/images/2048_1.png" alt="2048 Game" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.5s ease;">
+                    </div>
+                    <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">
+                        <i class="fas fa-expand"></i> Click to enlarge
+                    </div>
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">2048 Game</h3>
                     <p class="project-description">
@@ -254,7 +284,7 @@
             <span>2025 Anas Tber</span>
         </div>
         <div class="footer-social">
-            <a href="https://github.com" target="_blank" title="GitHub">
+            <a href="https://github.com/anastber" target="_blank" title="GitHub">
                 <i class="fab fa-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/anas-tber-99b994222/" target="_blank" title="LinkedIn">
@@ -263,7 +293,7 @@
             <a href="mailto:anas.tber@etu.ec-lyon.fr" title="Email">
                 <i class="fas fa-envelope"></i>
             </a>
-            <a href="#" title="Portfolio Code">
+            <a href="https://github.com/anastber/anastber.github.io" title="Portfolio Code">
                 <i class="fas fa-code"></i>
             </a>
         </div>

@@ -30,13 +30,17 @@ document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
 });
 
-// Navbar background on scroll
+// Enhanced navbar behavior on scroll
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(15, 15, 15, 0.98)';
+        navbar.style.background = 'rgba(26, 42, 74, 0.9)';
+        navbar.style.borderBottomColor = 'rgba(99, 102, 241, 0.3)';
+        navbar.style.boxShadow = '0 8px 40px rgba(26, 42, 74, 0.6), 0 0 30px rgba(99, 102, 241, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.15)';
     } else {
-        navbar.style.background = 'rgba(15, 15, 15, 0.95)';
+        navbar.style.background = 'rgba(26, 42, 74, 0.8)';
+        navbar.style.borderBottomColor = 'rgba(99, 102, 241, 0.15)';
+        navbar.style.boxShadow = '0 8px 40px rgba(26, 42, 74, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1)';
     }
 });
 
@@ -136,5 +140,27 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+// Gradient mesh optimization
+function initGradientMesh() {
+    // Very subtle mouse interaction for enhanced depth
+    const meshLayers = document.querySelectorAll('.mesh-layer');
+    
+    document.addEventListener('mousemove', (e) => {
+        const mouseX = (e.clientX / window.innerWidth) - 0.5;
+        const mouseY = (e.clientY / window.innerHeight) - 0.5;
+        
+        meshLayers.forEach((layer, index) => {
+            const speed = (index + 1) * 0.01; // Very subtle movement
+            const x = mouseX * speed * 20;
+            const y = mouseY * speed * 20;
+            
+            layer.style.transform += ` translate(${x}px, ${y}px)`;
+        });
+    });
+}
+
 // Start carousel when page loads
-document.addEventListener('DOMContentLoaded', startImageCarousel);
+document.addEventListener('DOMContentLoaded', () => {
+    startImageCarousel();
+    initGradientMesh();
+});
